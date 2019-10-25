@@ -1,5 +1,5 @@
 # CodingTutorial
-A repository of Python challenges aimed at deeper understanding of programming concepts and good practices. </br>The focus is not only on working out an optimal solution to the challenge but on learning how best to arrive at it.
+A repository of Python challenges aimed at learning to think like a programmer in a bottom-up approach. </br>The focus is not only on working out an optimal solution to the challenge but on learning how best to arrive at it.
 
 <h2>Tools and sources:</h2>
 <li>Python version: 3.7</li>
