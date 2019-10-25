@@ -27,6 +27,7 @@ b = (3,3)
 meetings = [(0, 1), (3, 5), (4, 8), (10, 12), (9, 10)]
 expected_merge = [(0, 1), (3, 8), (9, 12)] # the time slots taken by meetings, all put together (=merged :))
 
+
 def merge_meetings(list_of_meetings):
 	results = []
 	# tmp_list = list_of_meetings.copy() <-- this is because assert works on the entity, not an instance/copy of it, 
@@ -34,9 +35,10 @@ def merge_meetings(list_of_meetings):
 
 	for meeting in list_of_meetings:	# O(n) - we iterate over the first value in the tuples
 		for m in list_of_meetings:		# 0(n) - we iterate over the second value in the tuples
-		print(meeting, " - ", m)
+			print(meeting, " - ", m)
 # O(n * n) --> computational complexity of the for loop above
 	return results
+
 
 assert merge_meetings(meetings) == expected_merge
 assert merge_meetings([(1, 2), (3, 4)]) == [(1, 2), (3, 4)]
