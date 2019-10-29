@@ -38,7 +38,7 @@ def merge_meetings(list_of_meetings):
 
         print(meeting)
 
-        if end1 >= start2:
+        if end1 >= start2:      # O (n * n) complexity
             merged_list[-1][1] = end2 if end2 > end1 else end1 #
         else:
             merged_list.append(meeting)
