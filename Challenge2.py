@@ -16,9 +16,13 @@ film2 = int # placeholder for 'an unspecified item from films'
 while film1 == film2:
     # randomly select another film here
 
+# or: try / except syntax?
+
 
 def suggest_films(flight_times, films):
     for flight in flight_times:
         for film in films:
             """ if film1 + film2 =< flight
                 return film1, film2"""
+
+
