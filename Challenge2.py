@@ -10,19 +10,16 @@ import random
 flight_times = [180, 240, 280, 360, 440, 550] # a list of flight lengths in minutes
 films = [40, 60, 85, 90, 100, 110, 115] # a list of film lengths in minutes
 
+flight = random.choices(flight_times)
+print(flight)
+
 film1 = random.choice(films) # randomly selects the first film to display
 film2 = int # placeholder for 'an unspecified item from films'
 
-while film1 == film2:
-    # randomly select another film here
+# film1 != film2 # we need to ensure that one film is not randomly selected twice
 
-# or: try / except syntax?
-
-
-def suggest_films(flight_times, films):
-    for flight in flight_times:
-        for film in films:
-            """ if film1 + film2 =< flight
-                return film1, film2"""
-
-
+# def suggest_films(flight_times, films):
+for flight in flight_times:
+    for film in films:
+        if film1 + film2 =< flight:
+            print(film1, film2)
