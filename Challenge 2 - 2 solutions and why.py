@@ -21,7 +21,7 @@ def solution(films, target):  # O(n*n)
 
 
 def solution2(films, target):
-    flights = { }
+    flights = { } # a hash map / dictionary - reduced space complexity as there is one variable less to save/read
     for f1 in films: # O(n)
         if f1 not in flights:
             flights[f1] = target - f1
