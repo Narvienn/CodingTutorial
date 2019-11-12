@@ -12,9 +12,9 @@ films = [40, 60, 80, 90, 100, 110, 115] # a list of film lengths in minutes
 # 30, 30 - 60 --> that means film1 == film2, which we need to avoid
 
 
-def solution(films, target):  # O(n*n)
+def solution(films, target):
     for index1, f1 in enumerate(films): # enumerate: built-in function that returns value of item and counter in list
-        for index2, f2 in enumerate(films):
+        for index2, f2 in enumerate(films): # O(n*n)
             if f1 + f2 == target and not (index1 is index2):
                 return f1, f2
     return [] # Q: What are we returning here if return f1, f2 is already defined?
